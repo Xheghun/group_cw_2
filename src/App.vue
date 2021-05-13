@@ -1,22 +1,36 @@
 <template>
-  <div id="app">
-    <LessonComponent />
+  <div class="container">
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link">Lessons</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/user" class="nav-link">User</router-link>
+        </li>
+      </ul>
+    </nav><br />
+     <transition name="fade">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import LessonComponent from './components/LessonComponent.vue'
-
 export default {
-  name: 'App',
-  components: {
-    LessonComponent,
- 
-  }
+  name: 'app',
 }
 </script>
 
 <style>
+
+   .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s
+    }
+    .fade-enter, .fade-leave-active {
+      opacity: 0
+    }
+    
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

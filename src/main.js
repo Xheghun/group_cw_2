@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import VueRouter from 'vue-router';
+
 Vue.use(VueRouter);
 
 Vue.config.productionTip = false
@@ -10,7 +12,7 @@ import LessonComponent from './components/LessonComponent.vue';
 
 const routes = [
   {
-    name: 'lesson',
+    name: 'lessons',
     path: '/',
     component: LessonComponent,
   },
@@ -20,8 +22,8 @@ const routes = [
     component: UserComponent,
   },
   {
-    name: 'lesson',
-    path: '/lesson',
+    name: 'lessons',
+    path: '/lessons',
     component: LessonComponent,
   }
 ];
