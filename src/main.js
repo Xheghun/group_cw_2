@@ -22,7 +22,7 @@ const routes = [
     component: UserComponent,
   },
   {
-    name: 'lessons',
+    name: 'lesson',
     path: '/lessons',
     component: LessonComponent,
   }

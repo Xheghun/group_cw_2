@@ -39,4 +39,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+#border_item {
+  border: 2px solid #091976d2;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
 </style>
