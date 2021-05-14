@@ -1,10 +1,6 @@
 const express = require('express');
 const app = express();
 const PORT = 4000;
-const cors = require('cors');
-
-app.use(cors());
-
 
 const lessons = { "lessons":  [    { 'topic': 'math', 'location': 'London', 'price': 100 },    { 'topic': 'math', 'location': 'Liverpool', 'price': 80 },    { 'topic': 'math', 'location': 'Oxford', 'price': 90 },    { 'topic': 'math', 'location': 'Bristol', 'price': 120 },] };
 
