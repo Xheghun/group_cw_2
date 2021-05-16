@@ -5,12 +5,10 @@ const PORT = 4000;
 const lessons = { "lessons":  [    { 'topic': 'math', 'location': 'London', 'price': 100 },    { 'topic': 'math', 'location': 'Liverpool', 'price': 80 },    { 'topic': 'math', 'location': 'Oxford', 'price': 90 },    { 'topic': 'math', 'location': 'Bristol', 'price': 120 },] };
 
 app.get('/',   function (req, res) {
-    
     res.send(lessons);
 });
 
 app.get('/lessons',   function (req, res) {
-    
     res.send(lessons);
 });
 
